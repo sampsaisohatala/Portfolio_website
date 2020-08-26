@@ -1,45 +1,75 @@
+.project_heading{
+    color: whitesmoke;
+    text-align: center;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2rem;
+    text-transform: uppercase;
+    margin-top:32px;
+}
+
 .card_section{
-    /* width: 100%; */
     display: grid;
-    grid-template-columns: auto auto ;
-    /* adding: 10px; */
-    background: rgba(0, 0, 0, 0.5);
-    /* margin: 64px; */
+    grid-template-columns: auto auto auto;
+    background: rgba(0, 0, 0, 0);
     margin-top:32px;
 }
 
 .card{
-    /* padding: 16px; */
     border-radius: 0px;
-    /* margin: 16px; */
-    border: 1px whitesmoke solid;
+    border: 1px black solid;
+    background-color: rgba(0, 0, 0, 0)
 }
 
 .card_img{
-
+    border-radius: 0px;
+    background-color: rgba(0, 0, 0, 0);
 }
 .image_mask{
     width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  z-index: 60;
-  background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 60;
+    background-color: rgba(0, 0, 0, 0.5);
 }
 .card_title{
-    /* width: 100%; */
-    margin:16px;
+    color: whitesmoke;
     text-align: center;
-    color:whitesmoke;
-    font-size: 2rem;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    margin: 2rem;
 }
 
 .card_description{
     color:whitesmoke;
-    font-size: 2rem;
+    font-size: 1.1rem;
+    font-family: 'Roboto', sans-serif;
     width: 100%;
     text-align: justify;
+}
+.link_button{
+    width: 100%;
+    position: absolute;
+    bottom: 0px;
+}
+.googleplay{
+    height:60px;
+    width: 150px;
+    margin-bottom: 16px;
+}
+
+.youtube{
+    height:40px;
+    width: 60px;
+    margin-bottom: 24px;
+}
+
+@media only screen and (max-width: 1050px){
+    .card_description{
+        font-size: .9rem;
+    }
 }
 
 @media only screen and (max-width: 850px){

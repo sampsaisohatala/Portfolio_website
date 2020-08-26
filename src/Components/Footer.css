@@ -1,11 +1,10 @@
 .footer_container{
-    /* bg-gray-200 text-center text-xs p-3 relative bottom-0 w-full */
     background-color: black;
-    color: white;
     text-align: center;
     padding: 16px;
-    /* position: absolute; */
     width: 100%;
     bottom: 0;
-
+    color: whitesmoke;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1rem;
 }

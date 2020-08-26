@@ -10,7 +10,7 @@ function Header(){
             <span className='app_name'>
                 Sampsa Isohätälä
             </span>
-            <Navigation/>
+            {/* <Navigation/> */}
         </header>
     )
 }

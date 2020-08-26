@@ -1,28 +1,29 @@
 import React, { useState } from 'react';
-import { Card, Button } from 'react-bootstrap'
+import { Card } from 'react-bootstrap'
 import {animated, useTransition} from 'react-spring'
 import "./Projects.css";
 
 function ProjectCard(props){
 
   const [showCard, setShowCard] = useState(false);
+  const title = props.title
+  const description = props.description
+  const link = props.link;
+  const linkDestination = props.linkDestination;
 
   const transitions = useTransition(showCard, null, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
-    })
+  })
     
-  const title = <p>{props.title}</p>
-  const description = <p>{props.description}</p>
-
   return(
-
     <Card className='card'>
       <Card.Img 
         className="card_img" 
-        src="https://picsum.photos/600/600"
+        src="https://picsum.photos/1000/1000"
         onMouseOver={() => setShowCard(true)}
+        on
       />
         {
           transitions.map(({ item, key, props }) =>
@@ -31,21 +32,21 @@ function ProjectCard(props){
               className="image_mask"
               onMouseLeave={() => setShowCard(false)}
             >
-            <Card.Body>
-              <Card.Title className="card_title">
-                {title}
-              </Card.Title>
-              <Card.Text className="card_description">
-                {description} 
-              </Card.Text>
-              {/* <Button>Read more</Button> */}
-            </Card.Body>
-          </div>
+              <Card.Body>
+                <Card.Title className="card_title">
+                  {title}
+                </Card.Title>
+                <Card.Text className="card_description">
+                  {description}
+                </Card.Text>
+                <a className="link_button" href={link}>
+                  <img className={linkDestination}  src={require(`../Images/${linkDestination}.png`)}  alt={linkDestination}/>
+                </a>               
+              </Card.Body>
+            </div>
         </animated.div>
         )
       }
-
-    
     </Card>
   )
 }
