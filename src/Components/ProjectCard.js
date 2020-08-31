@@ -5,13 +5,13 @@ import "./Projects.css";
 
 function ProjectCard(props){
 
-  const [showCard, setShowCard] = useState(false);
+  const [showCardInfo, setShowCardInfo] = useState(false);
   const title = props.title
   const description = props.description
   const link = props.link;
   const linkDestination = props.linkDestination;
 
-  const transitions = useTransition(showCard, null, {
+  const transitions = useTransition(showCardInfo, null, {
     from: { opacity: 0 },
     enter: { opacity: 1 },
     leave: { opacity: 0 },
@@ -21,16 +21,16 @@ function ProjectCard(props){
     <Card className='card'>
       <Card.Img 
         className="card_img" 
-        src="https://picsum.photos/1000/1000"
-        onMouseOver={() => setShowCard(true)}
-        on
+        src={require(`../Images/${props.imageName}`)}
+        onMouseOver={() => setShowCardInfo(true)}
+        
       />
         {
           transitions.map(({ item, key, props }) =>
           item && <animated.div key={key} style={props} className="image_mask">
             <div 
               className="image_mask"
-              onMouseLeave={() => setShowCard(false)}
+              onMouseLeave={() => setShowCardInfo(false)}
             >
               <Card.Body>
                 <Card.Title className="card_title">

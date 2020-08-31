@@ -7,7 +7,7 @@ function Contact(){
             <div className="content_section">
                 <div className="text_div">
                 <h1>Contact info</h1>
-                <p><span style={{fontWeight: 800, color:"red"}}>Don't be a stranger </span> <br/> just say hello. </p>
+                <p><span style={{fontWeight: 800, color:"red"}}>Don't be a stranger </span> just say hello. </p>
             </div>
                 <IconRow/>           
             </div>       

@@ -1,8 +1,6 @@
 import React, { useState } from 'react'
-//import { render } from 'react-dom'
 import { useTrail, animated } from 'react-spring'
 import "./About.css";
-//import ParticlesBg from "particles-bg";
 
 const items = ['Web development', 'AR/VR', 'Game development']
 const config = { mass: 20, tension: 2000, friction: 2000 }
@@ -34,14 +32,6 @@ function About(){
             </div>
         </div>
     )
-    /* return(
-        <div className="about_panel">
-            <div className="content_panel">
-                <h1>Welcome!</h1>
-                <p>My name is Sampsa Isohätälä and this is the first iteration of my personal website. </p>
-            </div>
-        </div>
-    ) */
 }
 
 export default About;

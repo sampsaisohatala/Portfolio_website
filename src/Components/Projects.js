@@ -14,21 +14,24 @@ function Projects(){
                     3D Visualizer also supports Oculus virtual reality headsets."
                     link="https://www.youtube.com/watch?v=AkBXC9Wb8V8"
                     linkDestination ="youtube"
+                    imageName="3dvisualizer.png"
                 />
                 <ProjectCard 
                     title="SpiderLand"
                     description="Personal project made with Unity.
-                    Giant spider that utilizes inverted kinematics for leg placements. 
+                    Giant spider that uses inverse kinematics for leg placements. 
                     Bird flock system that tries to simulate how birds move in flocks. 
                     Interactive environment, that includes falling trees and breakable rocks."
-                    link="https://www.youtube.com/watch?v=AkBXC9Wb8V8"
+                    link="https://youtu.be/dTaYkFLU5zw"
                     linkDestination ="youtube"
+                    imageName="spiderland.jpeg"
                 />
                 <ProjectCard 
                     title="Curve Bullet"
                     description="Mobilegame created while studying in Oulu GameLab. I was working as lead programmer. +1000 downloads."
                     link="https://play.google.com/store/apps/details?id=com.HumbleHombres.CurveBullet&hl=fi"
                     linkDestination ="googleplay"
+                    imageName="curvebullet.jpeg"
                 />
                 
             </div>
