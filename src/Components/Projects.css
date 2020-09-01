@@ -9,7 +9,7 @@
 
 .card_section{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 1fr 1fr 1fr;
     background: rgba(0, 0, 0, 0);
     margin-top:32px;
 }
@@ -61,9 +61,10 @@
 }
 
 .youtube{
-    height:40px;
-    width: 60px;
-    margin-bottom: 24px;
+    height:35px;
+    width: 52px;
+    margin-bottom: 28px;
+    margin-left: 8px;
 }
 
 @media only screen and (max-width: 1050px){
