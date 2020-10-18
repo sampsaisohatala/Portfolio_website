@@ -1,16 +1,16 @@
-.header_container{
-    position: fixed;
-    background-color: rgba(0, 0, 0, 0.5);
-    width: 100%;
-    top: 0;
-    left: 0;
-    padding: 16px;
-    z-index: 100;
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    color: whitesmoke;
-    /* width: 100%;
+.header_container {
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  top: 0;
+  left: 0;
+  padding: 16px;
+  z-index: 100;
+  display: flex;
+  flex-direction: row;
+  justify-content: start;
+  color: whitesmoke;
+  /* width: 100%;
     height: auto;
     display: flex;
     flex-direction: row;
@@ -21,10 +21,14 @@
     color: whitesmoke; */
 }
 
-.app_name{
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 800;
-    
-    /* font-weight: bold;
+.app_logo {
+  margin-right: 16px;
+}
+
+.app_name {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 800;
+
+  /* font-weight: bold;
     font-size: 1.2rem; */
 }
